@@ -4,9 +4,10 @@ on:
       - main
 #okey
 #Dokey
+#Kommentar
 defaults:
   run:
-    working-directory: ./sentiment-demo
+    working-directory: ./sam_lambda
 
 jobs:
   build-deploy:
