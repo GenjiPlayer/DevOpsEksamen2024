@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 2
+    },
+    "auditLog": "/home/ec2-user/environment/.c9/luba004/redhat.java/.67953b3188afecad4cfeadac69f542ecdd4eaefa-audit.json",
+    "files": [
+        {
+            "date": 1732313477256,
+            "name": "/home/ec2-user/environment/.c9/luba004/redhat.java/client.log.2024-11-22",
+            "hash": "89a8f0c61db2ee4eef5340bdfb69b808"
+        }
+    ]
+}

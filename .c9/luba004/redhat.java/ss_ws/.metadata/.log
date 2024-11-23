@@ -1,0 +1,216 @@
+!SESSION 2024-11-20 20:28:08.778 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/ec2-user/environment/.c9/luba004/redhat.java/ss_ws
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:11.813
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:12.099
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:12.169
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:12.170
+!MESSAGE Initializing Java Language Server 1.13.0.202206301619
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:12.375
+!MESSAGE Setting java.home /usr/lib/jvm/java-11-amazon-corretto.x86_64 as default global VM
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:12.430
+!MESSAGE JVM Runtimes changed, saving new configuration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:12.446
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:12.529
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:12.598
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:13.956
+!MESSAGE Workspace initialized in 1512ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:14.072
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:14.074
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:14.079
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:14.082
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:14.095
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:14.100
+!MESSAGE Creating the Java project environment_f3d32509
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:14.135
+!MESSAGE Finished creating the Java project environment_f3d32509
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-11-20 20:28:14.421
+!MESSAGE Failed to create invisible project
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to create linked resource from '/home/ec2-user/environment' to the invisible project 'environment_f3d32509'.
+	at org.eclipse.jdt.ls.core.internal.ProjectUtils.createInvisibleProjectIfNotExist(ProjectUtils.java:349)
+	at org.eclipse.jdt.ls.core.internal.syntaxserver.SyntaxDocumentLifeCycleHandler.tryUpdateClasspath(SyntaxDocumentLifeCycleHandler.java:104)
+	at org.eclipse.jdt.ls.core.internal.syntaxserver.SyntaxDocumentLifeCycleHandler.resolveCompilationUnit(SyntaxDocumentLifeCycleHandler.java:88)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.handleOpen(BaseDocumentLifeCycleHandler.java:350)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler$5.run(BaseDocumentLifeCycleHandler.java:310)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.didOpen(BaseDocumentLifeCycleHandler.java:307)
+	at org.eclipse.jdt.ls.core.internal.syntaxserver.SyntaxLanguageServer.didOpen(SyntaxLanguageServer.java:272)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.jdt.ls.core.internal.ParentProcessWatcher.lambda$0(ParentProcessWatcher.java:130)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.eclipse.core.internal.resources.ResourceException: '/home/ec2-user/environment' is not a valid location for linked resources.
+	at org.eclipse.core.internal.resources.Resource.assertLinkRequirements(Resource.java:170)
+	at org.eclipse.core.internal.resources.Resource.createLink(Resource.java:639)
+	at org.eclipse.jdt.ls.core.internal.ProjectUtils.createInvisibleProjectIfNotExist(ProjectUtils.java:333)
+	... 25 more
+!SUBENTRY 1 org.eclipse.jdt.ls.core 4 0 2024-11-20 20:28:14.421
+!MESSAGE Failed to create linked resource from '/home/ec2-user/environment' to the invisible project 'environment_f3d32509'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: '/home/ec2-user/environment' is not a valid location for linked resources.
+	at org.eclipse.core.internal.resources.Resource.assertLinkRequirements(Resource.java:170)
+	at org.eclipse.core.internal.resources.Resource.createLink(Resource.java:639)
+	at org.eclipse.jdt.ls.core.internal.ProjectUtils.createInvisibleProjectIfNotExist(ProjectUtils.java:333)
+	at org.eclipse.jdt.ls.core.internal.syntaxserver.SyntaxDocumentLifeCycleHandler.tryUpdateClasspath(SyntaxDocumentLifeCycleHandler.java:104)
+	at org.eclipse.jdt.ls.core.internal.syntaxserver.SyntaxDocumentLifeCycleHandler.resolveCompilationUnit(SyntaxDocumentLifeCycleHandler.java:88)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.handleOpen(BaseDocumentLifeCycleHandler.java:350)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler$5.run(BaseDocumentLifeCycleHandler.java:310)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.didOpen(BaseDocumentLifeCycleHandler.java:307)
+	at org.eclipse.jdt.ls.core.internal.syntaxserver.SyntaxLanguageServer.didOpen(SyntaxLanguageServer.java:272)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.jdt.ls.core.internal.ParentProcessWatcher.lambda$0(ParentProcessWatcher.java:130)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2024-11-20 20:28:14.422
+!MESSAGE '/home/ec2-user/environment' is not a valid location for linked resources.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:15.347
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:16.543
+!MESSAGE begin problem for /SQSClient.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:16.543
+!MESSAGE 0 problems reported for /SQSClient.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:16.566
+!MESSAGE Validated 1. Took 813 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:29.830
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:29.843
+!MESSAGE Clearing problems for /SQSClient.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:32.850
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:32.873
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:32.889
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-20 20:28:32.919
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+
+!ENTRY org.eclipse.core.resources 4 566 2024-11-20 20:28:33.051
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!STACK 0
+java.lang.Exception: Workspace was not properly initialized or has already shutdown.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Workspace.getWorkManager(Workspace.java:1817)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1481)
+	at org.eclipse.core.internal.events.AutoBuildJob$AutoBuildOffJob.run(AutoBuildJob.java:333)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-11-22 22:11:17.808 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/ec2-user/environment/.c9/luba004/redhat.java/ss_ws
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:22.059
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:22.476
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:22.612
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:22.614
+!MESSAGE Initializing Java Language Server 1.13.0.202206301619
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:22.764
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:24.271
+!MESSAGE Workspace initialized in 1587ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:24.289
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:24.317
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:24.321
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:24.327
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:31.738
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:31.748
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:31.801
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-11-22 22:11:31.839
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:

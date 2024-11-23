@@ -5,12 +5,11 @@ import random
 import os
 import logging
 
-# Setup logging
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 bucket = os.environ['BUCKET']
-bedrock_client = boto3.client("bedrock-runtime", region_name="us-east-1")  # Ensure consistency here
+bedrock_client = boto3.client("bedrock-runtime", region_name="us-east-1")  
 s3_client = boto3.client("s3")
 
 def lambda_handler(event, context):
@@ -41,7 +40,7 @@ def lambda_handler(event, context):
         }
 
         logger.info("Invoking Bedrock model with request: %s", json.dumps(native_request))
-        response = bedrock_client.invoke_model(  # Correct variable usage
+        response = bedrock_client.invoke_model(  
             modelId=model_id,
             body=json.dumps(native_request)
         )

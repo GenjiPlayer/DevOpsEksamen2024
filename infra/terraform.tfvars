@@ -1,0 +1,1 @@
+cloudwatch_email = "ludvik.s.b@gmail.com"
