@@ -140,7 +140,7 @@ resource "aws_cloudwatch_metric_alarm" "sqs_age_alarm" {
   }
   period              = 60
   evaluation_periods  = 1
-  threshold           = 300
+  threshold           = 0
   comparison_operator = "GreaterThanThreshold"
   alarm_actions       = [aws_sns_topic.cloudwatch_alarm_topic.arn]
 }
