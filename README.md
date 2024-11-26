@@ -4,7 +4,7 @@
         
     
 - OPG 2
-    - 2A 
+    - 2A https://eu-west-1.console.aws.amazon.com/sqs/v3/home?region=eu-west-1#/queues/https%3A%2F%2Fsqs.eu-west-1.amazonaws.com%2F244530008913%2Fimage-generator/send-receive
    
      - 2B https://github.com/GenjiPlayer/DevOpsEksamen2024/actions/runs/12015666454/job/33494213133
           https://github.com/GenjiPlayer/DevOpsEksamen2024/actions/runs/11989339673/job/33425617990
