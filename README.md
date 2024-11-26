@@ -6,22 +6,20 @@
 - OPG 2
     - 2A https://eu-west-1.console.aws.amazon.com/sqs/v3/home?region=eu-west-1#/queues/https%3A%2F%2Fsqs.eu-west-1.amazonaws.com%2F244530008913%2Fimage-generator/send-receive
    
-     - 2B https://github.com/GenjiPlayer/DevOpsEksamen2024/actions/runs/12015666454/job/33494213133
+     - 2B https://github.com/GenjiPlayer/DevOpsEksamen2024/actions/runs/12015666456/job/33494213132
           https://github.com/GenjiPlayer/DevOpsEksamen2024/actions/runs/11989339673/job/33425617990
      
 
 - OPG 3
     - Fikk ikke til denne oppgaven
-   
-       
-    
 
+   
 -    OPG4
     - Se terraform.tfvars og main.tf i infra mappen
 
   - OPG 5
 
- 1. Automatisering og kontinuerlig levering (CI/CD)
+1. Automatisering og kontinuerlig levering (CI/CD)
 Serverless-arkitektur lar utviklere kode og kjøre koden uten å trenge å tenke på å holde styr på egne servere og den underliggende infrastrukturen. Utviklere vil kun trenge å sende koden til en feks AWS sky-plattform, som vil behandle og kjøre koden ettersom plattformen er konfigurert. Applikasjoner som er bygget med mikrotjenester-arkitektur består av flere små selvstendige tjenester som kjører sin egen prosess.
 Den serverless-arkitekturen sender små isolerte funksjoner. Dette gjør utrullingen rask og fleksibel. 
 I Mikrotjenester kreves det et mer avansert oppsett for CI/CD. Det bygges containere og koordineres mellom tjenester. Dette er mer komplekst og gir en bedre kontroll over systemet enn det en serverless-arkitektur vil gi.
